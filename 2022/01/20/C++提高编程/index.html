@@ -18,8 +18,8 @@
   
     <meta name="description" content="C++提高编程 本阶段主要针对C++&#x3D;&#x3D;泛型编程&#x3D;&#x3D;和&#x3D;&#x3D;STL&#x3D;&#x3D;技术做详细讲解，探讨C++更深层的使用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C++核心编程">
-<meta property="og:url" content="http://example.com/2022/01/19/C++%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B/index.html">
+<meta property="og:title" content="C++提高编程">
+<meta property="og:url" content="http://example.com/2022/01/20/C++%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B/index.html">
 <meta property="og:site_name" content="A little Blog">
 <meta property="og:description" content="C++提高编程 本阶段主要针对C++&#x3D;&#x3D;泛型编程&#x3D;&#x3D;和&#x3D;&#x3D;STL&#x3D;&#x3D;技术做详细讲解，探讨C++更深层的使用">
 <meta property="og:locale" content="zh_CN">
@@ -35,15 +35,15 @@
 <meta property="og:image" content="https://gitee.com/PCBismarck/drawing-bed/raw/master/clip_image002-1547606475892.jpg">
 <meta property="og:image" content="https://gitee.com/PCBismarck/drawing-bed/raw/master/1547606785041.png">
 <meta property="og:image" content="https://gitee.com/PCBismarck/drawing-bed/raw/master/clip_image002-1547608564071.jpg">
-<meta property="article:published_time" content="2022-01-19T15:30:10.323Z">
-<meta property="article:modified_time" content="2022-01-19T15:30:40.182Z">
+<meta property="article:published_time" content="2022-01-19T16:06:29.674Z">
+<meta property="article:modified_time" content="2022-01-19T16:07:11.690Z">
 <meta property="article:author" content="PC.Bismarck">
 <meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://gitee.com/PCBismarck/drawing-bed/raw/master/1547105026929.png">
   
   
-  <title>C++核心编程 - A little Blog</title>
+  <title>C++提高编程 - A little Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -189,7 +189,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="C++核心编程">
+            <span class="h2" id="subtitle" title="C++提高编程">
               
             </span>
 
@@ -199,8 +199,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-01-19 23:30" pubdate>
-        2022年1月19日 晚上
+      <time datetime="2022-01-20 00:06" pubdate>
+        2022年1月20日 凌晨
       </time>
     </span>
   
@@ -248,7 +248,7 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">C++核心编程</h1>
+            <h1 style="display: none">C++提高编程</h1>
             
             <div class="markdown-body">
               <h1 id="C-提高编程"><a href="#C-提高编程" class="headerlink" title="C++提高编程"></a>C++提高编程</h1><ul>
@@ -513,7 +513,9 @@
 <p>STL<strong>容器</strong>就是将运用<strong>最广泛的一些数据结构</strong>实现出来</p>
 <p>常用的数据结构：数组, 链表,树, 栈, 队列, 集合, 映射表 等</p>
 <p>这些容器分为<strong>序列式容器</strong>和<strong>关联式容器</strong>两种:</p>
-<p>​    <strong>序列式容器</strong>:强调值的排序，序列式容器中的每个元素均有固定的位置。<br>​    <strong>关联式容器</strong>:二叉树结构，各元素之间没有严格的物理上的顺序关系</p>
+<div class="code-wrapper"><pre><code class="hljs">**序列式容器**:强调值的排序，序列式容器中的每个元素均有固定的位置。
+**关联式容器**:二叉树结构，各元素之间没有严格的物理上的顺序关系
+</code></pre></div>
 <p><strong>算法：</strong>问题之解法也</p>
 <p>有限的步骤，解决逻辑或数学上的问题，这一门学科我们叫做算法(Algorithms)</p>
 <p>算法分为:<strong>质变算法</strong>和<strong>非质变算法</strong>。</p>
@@ -624,7 +626,8 @@
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-comment">//赋值</span><br><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">test01</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>	string str1;<br>	str1 = <span class="hljs-string">&quot;hello world&quot;</span>;<br>	cout &lt;&lt; <span class="hljs-string">&quot;str1 = &quot;</span> &lt;&lt; str1 &lt;&lt; endl;<br><br>	string str2;<br>	str2 = str1;<br>	cout &lt;&lt; <span class="hljs-string">&quot;str2 = &quot;</span> &lt;&lt; str2 &lt;&lt; endl;<br><br>	string str3;<br>	str3 = <span class="hljs-string">&#x27;a&#x27;</span>;<br>	cout &lt;&lt; <span class="hljs-string">&quot;str3 = &quot;</span> &lt;&lt; str3 &lt;&lt; endl;<br><br>	string str4;<br>	str4.<span class="hljs-built_in">assign</span>(<span class="hljs-string">&quot;hello c++&quot;</span>);<br>	cout &lt;&lt; <span class="hljs-string">&quot;str4 = &quot;</span> &lt;&lt; str4 &lt;&lt; endl;<br><br>	string str5;<br>	str5.<span class="hljs-built_in">assign</span>(<span class="hljs-string">&quot;hello c++&quot;</span>,<span class="hljs-number">5</span>);<br>	cout &lt;&lt; <span class="hljs-string">&quot;str5 = &quot;</span> &lt;&lt; str5 &lt;&lt; endl;<br><br><br>	string str6;<br>	str6.<span class="hljs-built_in">assign</span>(str5);<br>	cout &lt;&lt; <span class="hljs-string">&quot;str6 = &quot;</span> &lt;&lt; str6 &lt;&lt; endl;<br><br>	string str7;<br>	str7.<span class="hljs-built_in">assign</span>(<span class="hljs-number">5</span>, <span class="hljs-string">&#x27;x&#x27;</span>);<br>	cout &lt;&lt; <span class="hljs-string">&quot;str7 = &quot;</span> &lt;&lt; str7 &lt;&lt; endl;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br><br>	<span class="hljs-built_in">test01</span>();<br><br>	<span class="hljs-built_in">system</span>(<span class="hljs-string">&quot;pause&quot;</span>);<br><br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <p>总结：</p>
-<p>​    string的赋值方式很多，<code>operator=</code>  这种方式是比较实用的</p>
+<div class="code-wrapper"><pre><code class="hljs">string的赋值方式很多，`operator=`  这种方式是比较实用的
+</code></pre></div>
 <h4 id="3-1-4-string字符串拼接"><a href="#3-1-4-string字符串拼接" class="headerlink" title="3.1.4 string字符串拼接"></a>3.1.4 string字符串拼接</h4><p><strong>功能描述：</strong></p>
 <ul>
 <li>实现在字符串末尾拼接字符串</li>
@@ -786,10 +789,12 @@
 <li><p><code>size();</code>                              //返回容器中元素的个数</p>
 </li>
 <li><p><code>resize(int num);</code>             //重新指定容器的长度为num，若容器变长，则以默认值填充新位置。</p>
-<p>​                          //如果容器变短，则末尾超出容器长度的元素被删除。</p>
+<div class="code-wrapper"><pre><code class="hljs">                      //如果容器变短，则末尾超出容器长度的元素被删除。
+</code></pre></div>
 </li>
 <li><p><code>resize(int num, elem);</code>  //重新指定容器的长度为num，若容器变长，则以elem值填充新位置。</p>
-<p>​                              //如果容器变短，则末尾超出容器长度的元素被删除</p>
+<div class="code-wrapper"><pre><code class="hljs">                          //如果容器变短，则末尾超出容器长度的元素被删除
+</code></pre></div>
 </li>
 </ul>
 <p><strong>示例：</strong></p>
@@ -931,10 +936,12 @@
 <li><p><code>deque.size();</code>                         //返回容器中元素的个数</p>
 </li>
 <li><p><code>deque.resize(num);</code>                //重新指定容器的长度为num,若容器变长，则以默认值填充新位置。</p>
-<p>​                                         //如果容器变短，则末尾超出容器长度的元素被删除。</p>
+<div class="code-wrapper"><pre><code class="hljs">                                     //如果容器变短，则末尾超出容器长度的元素被删除。
+</code></pre></div>
 </li>
 <li><p><code>deque.resize(num, elem);</code>     //重新指定容器的长度为num,若容器变长，则以elem值填充新位置。</p>
-<p>​                                                     //如果容器变短，则末尾超出容器长度的元素被删除。</p>
+<div class="code-wrapper"><pre><code class="hljs">                                                 //如果容器变短，则末尾超出容器长度的元素被删除。
+</code></pre></div>
 </li>
 </ul>
 <p><strong>示例：</strong></p>
@@ -1170,7 +1177,8 @@
 <li><p><code>empty(); </code>                           //判断容器是否为空</p>
 </li>
 <li><p><code>resize(num);</code>                   //重新指定容器的长度为num，若容器变长，则以默认值填充新位置。</p>
-<p>​                        //如果容器变短，则末尾超出容器长度的元素被删除。</p>
+<div class="code-wrapper"><pre><code class="hljs">                    //如果容器变短，则末尾超出容器长度的元素被删除。
+</code></pre></div>
 </li>
 <li><p><code>resize(num, elem); </code>       //重新指定容器的长度为num，若容器变长，则以elem值填充新位置。</p>
 <div class="code-wrapper"><pre><code class="hljs">                                           //如果容器变短，则末尾超出容器长度的元素被删除。
@@ -2116,8 +2124,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/01/19/DocForBlog/">
-                        <span class="hidden-mobile">常用指令备忘</span>
+                      <a href="/2022/01/20/C++%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/">
+                        <span class="hidden-mobile">C++核心编程</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
