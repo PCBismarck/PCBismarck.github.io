@@ -23,11 +23,13 @@
 <meta property="og:site_name" content="A little Blog">
 <meta property="og:description" content="之前的每日打卡脚本只能发出气泡窗口提示，如果当时手机不在使用中无法得知每日打卡是否顺利完成（因为网络问题可能导致打卡失败），所以决定加上通知功能，现记录下Android上通知的创建方式。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="c:/Users/波斯猫俾斯麦/AppData/Roaming/Typora/typora-user-images/image-20220923222010316.png">
 <meta property="article:published_time" content="2022-03-21T12:27:23.000Z">
-<meta property="article:modified_time" content="2022-03-21T13:14:57.244Z">
+<meta property="article:modified_time" content="2022-09-23T14:20:23.290Z">
 <meta property="article:author" content="PC.Bismarck">
 <meta property="article:tag" content="Android">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="c:/Users/波斯猫俾斯麦/AppData/Roaming/Typora/typora-user-images/image-20220923222010316.png">
   
   
   <title>Android通知的创建 - A little Blog</title>
@@ -197,7 +199,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.9k 字
+      2.9k 字
     </span>
   
 
@@ -206,7 +208,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      16 分钟
+      24 分钟
     </span>
   
 
@@ -249,6 +251,12 @@
 <p>由于我的初衷只是起到一个提醒的作用，故更深入的交互功能就不在考虑范围内。</p>
 <div class="note note-info">
             <p>Notification 的基本操作主要有创建、更新、取消这三种。一个 Notification 的必要属性有三项，如果不设置则在运行时会抛出异常：</p><p>​    小图标，通过 setSmallIcon() 方法设置</p><p>​    标题，通过 setContentTitle() 方法设置</p><p>​    内容，通过 setContentText() 方法设置</p><p>除了以上三项，其它均为可选项。虽然如此，但还是应该给 Notification 设置一个 Action ，这样就可以直接跳转到 App 的某个 Activity 、启动一个 Service 或者发送一个 Broadcast。否则，Notification 仅仅只能起到通知的效果，而不能与用户交互。</p><p>当系统接收到通知时，可以通过震动、响铃、呼吸灯等多种方式进行提醒。</p>
+          </div>
+
+
+
+<div class="note note-info">
+            <p>补充：通知中时间的设置以及date对象的格式化</p><p>参考：<a target="_blank" rel="noopener" href="https://www.wenjiangs.com/doc/jeem7amz">https://www.wenjiangs.com/doc/jeem7amz</a></p><p>利用 SimpleDateFormat类可以对date进行格式化</p><p>格式化样例：</p><p><img src="C:\Users\波斯猫俾斯麦\AppData\Roaming\Typora\typora-user-images\image-20220923222010316.png" srcset="/img/loading.gif" lazyload alt="image-20220923222010316"></p><p>完整的设置：</p><p>var manager = context.getSystemService(android.app.Service.NOTIFICATION_SERVICE);//获取notification manager<br>var notification;<br>var date =new Date();<br>var sdf = new java.text.SimpleDateFormat(“EEE  yyyy-MM-dd  HH:mm”)<br>if (device.sdkInt &gt;= 26) {//Android 8以上需要定义channel<br>  var channel = new android.app.NotificationChannel(“channel_id”, “channel_name”, android.app.NotificationManager.IMPORTANCE_DEFAULT);<br>  channel.enableLights(true);<br>  channel.setLightColor(0xff0000);<br>  channel.setShowBadge(false);<br>  manager.createNotificationChannel(channel);//创建channel<br>  notification = new android.app.Notification.Builder(context, “channel_id”)//创建一个notification builder<br>  //对builder设置一下notification相关的信息<br>    .setContentTitle(“每日打卡”)//设置通知栏标题<br>    .setContentText(sdf.format(date))//设置消息内容<br>    .setWhen(new Date().getTime())//设置时间<br>    .setShowWhen(true)<br>    .setSmallIcon(android.R.drawable.ic_delete)//设置小图标<br>    .setTicker(“这是状态栏显示的内容”)//通知首次出现在通知栏，带上升动画效果的<br>    .build();//调用build()方法创建notification<br>}</p>
           </div>
 
             </div>
